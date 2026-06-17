@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عيادة أليفي - للرعاية البيطرية</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- القائمة العلوية -->
+    <header>
+      <div class="logo">عيادة أليفي</div>
+      <nav>
+        <ul>
+          <li><a href="#Home">الرئيسية</a></li>,
+          <li><a href="#services">الخدمات</a></li>,
+          <li><a href="#booking">حجز موعد</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- القسم الرئيسي -->
+    <section id="Home" class="hero">
+      <div class="hero-content">
+        <h1>رعاية محترفة لأصدقائكم الأليفين</h1>
+        <p>
+          نحن هنا لتقديم أفضل الخدمات الطبية و الرعاية الصحية لحيواناتكم الأليفة
+          علي أيدي أمهر الأطباء البيطريين
+        </p>
+        <a href="#booking" class="btn">احجز موعداٌ الآن</a>
+      </div>
+    </section>
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+      <h2>خدمات العيادة</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <h3>فحص طبي شامل</h3>
+          <p>فحوصات دورية و تشخيص دقيق لضمان سلامة أليفك و نشاطه المستمر</p>
+        </div>
+        <div class="service-card">
+          <h3>العياية و المظهر</h3>
+          <p>قص شعر , تقليم أظافر , تنظيف شامل للحفاظ علي نظافة و جمال أليفك</p>
+        </div>
+      </div>
+    </section>
+    <!-- قسم حجز المواعيد -->
+    <section id="booking" class="booking">
+      <h2>احجز موعداٌ لأليفك</h2>
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label for="ownerName">اسم المربي</label>
+          <input
+            type="text" maxlength="20" minlength="10"
+            id="ownerName"
+            required
+            placeholder="أدخل اسمك كامل"
+          />
+        </div>
+        <div class="form-group">
+          <label for="petType">نوع الحيوان:</label>
+          <select id="petType" required>
+            <option value="">اختر النوع...</option>
+            <option value="كلب">كلب</option>
+            <option value="قطة">قطة</option>
+            <option value="عصفور أو نوع أخر">عصفور أو نوع أخر</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">التاريخ المطلوب</label>
+          <input type="date" id="date" required />
+        </div>
+        <button type="submit" class="btn-submit">تأكيد الحجز</button>
+      </form>
+      <div id="successMessage" class="hidden"></div>
+    </section>
+    <!-- تذييل الصفحة -->
+    <footer>
+      <p>عيادة أليفي البيطرية. جميع الحقوق محفوظة 2026&copy;</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
